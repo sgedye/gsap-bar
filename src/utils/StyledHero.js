@@ -3,19 +3,20 @@ import styled from 'styled-components'
 import BackgroundImage from 'gatsby-background-image'
 
 const StyledHero = ({fluid, className, children}) => {
-    return (
-       
-            <BackgroundImage className={className} fluid={fluid} >
-                {children}
-            </BackgroundImage>       
-    )
+  return (
+    <BackgroundImage className={className} fluid={fluid} >
+      {children}
+    </BackgroundImage>       
+  )
 }
+
 export default styled(StyledHero)`
-height:100vh;
-background-position:center;
-background-size: cover;
-background-repeat: no-repeat;
+  height:100vh;
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
 `
+
 //  **************graphql QUERY FROM RELATIVE PATH**************
 // const getImages = graphql`
 // query{
