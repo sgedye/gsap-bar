@@ -1,11 +1,12 @@
 import React from 'react'
+import Layout from "../layout/layout"
 import DrinksHero from "../components/drinksPage/DrinksHero"
 
 function drinks() {
   return (
-    <div>
+    <Layout>
       <DrinksHero />
-    </div>
+    </Layout>
   )
 }
 

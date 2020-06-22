@@ -1,11 +1,12 @@
 import React from 'react'
+import Layout from "../layout/layout"
 import ContactHero from '../components/contactPage/ContactHero'
 
 function contact() {
   return (
-    <div>
+    <Layout>
       <ContactHero />
-    </div>
+    </Layout>
   )
 }
 

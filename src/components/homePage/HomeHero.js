@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import Title from '../../utils/Title'
 import { graphql, useStaticQuery } from 'gatsby'
 import StyledHero from '../../utils/StyledHero'
 
@@ -26,19 +25,37 @@ const HomeHero = () => {
       home="home"
     >
       <Wrap>
-        <Title title="Home" subtitle="- barNone -" />
+        <div className="title">
+          <h1>Bar<span>N</span>one</h1>
+          <h2>- hartford -</h2>
+        </div> 
       </Wrap>
     </StyledHero>
   )
 }
 
 const Wrap = styled.section`
+  margin-top: -100vh;
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  h1, h2, span {
+    color: white;
+    mix-blend-mode: difference;
+  }
+  h1 { font-size: 13vw; }
+  span { fontsize: 18vw; }
+  h2 { font-size: 5vw; }
 `
 
 export default HomeHero

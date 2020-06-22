@@ -1,11 +1,12 @@
 import React from 'react'
+import Layout from "../layout/layout"
 import EventsHero from '../components/eventsPage/EventsHero'
 
 function events() {
   return (
-    <div>
+    <Layout>
       <EventsHero />
-    </div>
+    </Layout>
   )
 }
 
